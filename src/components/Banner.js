@@ -1,14 +1,18 @@
 import React from "react";
 // images
-// import Images from '../assets'
+import Profile_Image from "../assets/profile_img.png";
+// pdf
+import My_CV from "../assets/shreyashlodhiresume.pdf.pdf";
 // icons
-import { FaGithub, FaYoutube, FaDribbble } from "react-icons/fa";
+import { FaGithub, FaLinkedin, FaStackOverflow } from "react-icons/fa";
 // type animation
 import { TypeAnimation } from "react-type-animation";
 // moion
 import { motion } from "framer-motion";
 // variants
 import { fadeIn } from "../variant";
+// link
+import { Link } from "react-scroll";
 
 const Banner = () => {
   return (
@@ -38,12 +42,7 @@ const Banner = () => {
             >
               <span className="mr-4">I am a</span>
               <TypeAnimation
-                sequence={[
-                  "Full Stack Developer",
-                  2000,
-                  "Blockchain Developer",
-                  2000,
-                ]}
+                sequence={["Full Stack Developer", 2000, "AI Engineer", 2000]}
                 speed={50}
                 className="text-accent"
                 wrapper="span"
@@ -68,8 +67,8 @@ const Banner = () => {
               className="flex max-w-max gap-x-6 items-center mb-12 mx-auto lg:mx-0"
             >
               <button className="btn btn-lg">Contact Me</button>
-              <a href="#" className="text-gradient btn-link">
-                My Portfolio
+              <a href="My_CV" download="" className="text-gradient btn-link">
+                My Resume
               </a>
             </motion.div>
             {/* socials */}
@@ -78,16 +77,28 @@ const Banner = () => {
               initial="hidden"
               whileInView={"show"}
               viewport={{ once: false, amount: 0.7 }}
-              className="flex tetx-[20px] gap-x-6 max-w-max mx-auto lg:mx-0"
+              className="flex text-[20px] gap-x-6 max-w-max mx-auto lg:mx-0"
             >
-              <a href="#">
-                <FaYoutube />
-              </a>
-              <a href="#">
-                <FaDribbble />
-              </a>
-              <a href="#">
+              <a
+                href="https://github.com/shreyashlodhi"
+                target="_blank"
+                rel="noreferrer"
+              >
                 <FaGithub />
+              </a>
+              <a
+                href="https://stackoverflow.com/users/22233197/shreydev"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <FaStackOverflow />
+              </a>
+              <a
+                href="https://www.linkedin.com/in/shreyash-dev/"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <FaLinkedin />
               </a>
             </motion.div>
           </div>
@@ -98,7 +109,7 @@ const Banner = () => {
             whileInView={"show"}
             className="hidden lg:flex flex-1 max-w-[320px] lg:max-w-[482px]"
           >
-            <img src={Image} alt="" />
+            <img src={Profile_Image} alt="" />
           </motion.div>
         </div>
       </div>
