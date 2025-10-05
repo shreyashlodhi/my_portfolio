@@ -8,21 +8,21 @@ import { fadeIn } from "../variant";
 
 const services = [
   {
-    name: "UI/UX Design",
+    name: "AI & LLM Development",
     description:
-      "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sequi officia, architecto ullam assumenda dolorum minima earum fugit, error deserunt illum quos ver",
+      "Building sophisticated AI agents and applications using LangChain, LangGraph, and Large Language Models (LLMs) to create intelligent, autonomous workflows.",
     link: "Learn More",
   },
   {
     name: "Fullstack Development",
     description:
-      "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sequi officia, architecto ullam assumenda dolorum minima earum fugit, error deserunt illum quos ",
+      "Crafting robust and scalable full-stack web applications using the MERN stack (MongoDB, Express.js, React, Node.js), PostgreSQL, and modern tools like Next.js.",
     link: "Learn More",
   },
   {
-    name: "Blockchain Development",
+    name: "Machine Learning & NLP",
     description:
-      "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sequi officia, architecto ullam assumenda dolorum minima earum fugit, error deserunt illum quos veritatis .",
+      "Developing and optimizing machine learning models for tasks like classification and sentiment analysis, with a focus on Natural Language Processing (NLP) techniques.",
     link: "Learn More",
   },
 ];
@@ -40,12 +40,24 @@ const Services = () => {
             className="flex-1 lg:bg-services lg:bg-bottom bg-no-repeat mix-blend-lighten mb-12 lg:mb-0"
           >
             <h2 className="h2 text-accent mb-6">What I Do.</h2>
-            <h3 className="h3 max-w-[455px] mb-16">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor
-              provident autem eos saepe impedit maxime eligendi dicta nemo nisi
-              ewhgjo jjewnfffbkpkq ninrejj orjn jjwjv
+            <h3 className="h4 max-w-[455px] mb-16">
+              I specialize in bridging the gap between cutting-edge artificial
+              intelligence and practical web solutions. My expertise lies in
+              developing intelligent systems, from building autonomous AI agents
+              with LangGraph and LLMs to creating seamless full-stack
+              applications with the MERN stack. I have a strong foundation in
+              Machine Learning, Natural Language Processing (NLP), and Computer
+              Vision, which allows me to build and deploy models that solve
+              real-world problems. Essentially, I turn complex algorithms into
+              user-friendly, impactful software.
             </h3>
-            <button className="btn btn-sm">See my work</button>
+            <a
+              href="https://github.com/shreyashlodhi?tab=repositories"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <button className="btn btn-sm">See my work</button>
+            </a>
           </motion.div>
           {/* services */}
           <motion.div

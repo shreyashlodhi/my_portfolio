@@ -2,9 +2,9 @@ import React from "react";
 // images
 import Profile_Image from "../assets/profile_img.png";
 // pdf
-import My_CV from "../assets/shreyashlodhiresume.pdf.pdf";
+import My_CV from "../assets/ShreyashLodhiResume.pdf";
 // icons
-import { FaGithub, FaLinkedin, FaStackOverflow } from "react-icons/fa";
+import { FaGithub, FaLinkedin, FaTwitter } from "react-icons/fa";
 // type animation
 import { TypeAnimation } from "react-type-animation";
 // moion
@@ -12,7 +12,7 @@ import { motion } from "framer-motion";
 // variants
 import { fadeIn } from "../variant";
 // link
-import { Link } from "react-scroll";
+// import { Link } from "react-scroll";
 
 const Banner = () => {
   return (
@@ -56,8 +56,8 @@ const Banner = () => {
               viewport={{ once: false, amount: 0.7 }}
               className="mb-8 max-w-lg mx-auto lg:mx-0"
             >
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cum ex
-              fugiat placeat repellat rem ut quae libero illo maxime?
+              An engineer passionate about solving complex problems through code
+              and intelligent systems.
             </motion.p>
             <motion.div
               variants={fadeIn("up", 0.6)}
@@ -67,7 +67,7 @@ const Banner = () => {
               className="flex max-w-max gap-x-6 items-center mb-12 mx-auto lg:mx-0"
             >
               <button className="btn btn-lg">Contact Me</button>
-              <a href="My_CV" download="" className="text-gradient btn-link">
+              <a href={My_CV} download="" className="text-gradient btn-link">
                 My Resume
               </a>
             </motion.div>
@@ -87,11 +87,11 @@ const Banner = () => {
                 <FaGithub />
               </a>
               <a
-                href="https://stackoverflow.com/users/22233197/shreydev"
+                href="https://x.com/ShreyashLodhi"
                 target="_blank"
                 rel="noreferrer"
               >
-                <FaStackOverflow />
+                <FaTwitter />
               </a>
               <a
                 href="https://www.linkedin.com/in/shreyash-dev/"

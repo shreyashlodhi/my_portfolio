@@ -1,6 +1,6 @@
-import React from "react";
+// import React from "react";
 // countup
-import CountUp from "react-countup";
+// import CountUp from "react-countup";
 // intersection observer hook
 import { useInView } from "react-intersection-observer";
 // motion
@@ -10,7 +10,7 @@ import { fadeIn } from "../variant";
 import AboutImg from "../assets/about_img.jpg";
 
 const About = () => {
-  const [ref, inView] = useInView({
+  const [ref] = useInView({
     treshold: 0.5,
   });
   return (
@@ -35,19 +35,22 @@ const About = () => {
             viewport={{ once: false, amount: 0.3 }}
             className="flex-1"
           >
-            <h2 className="h2 text-accent">About me.</h2>
-            <h3 className="h3 mb-4">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum,
-              suscipit numquam reprehenderit quia id autem tempora possimus rem
-              illo natus harum tenetur repudiandae delectus consectetur.
-            </h3>
+            <h2 className="h2 text-accent">About me</h2>
+            <h4 className="h4 mb-2">
+              A dedicated AI enthusiast and developer focused on creating
+              impactful solutions using Machine Learning, Deep Learning, and
+              Generative AI. I have hands-on experience building autonomous AI
+              agents, NLP models like spam classifiers, and real-time computer
+              vision systems. With a solid academic background in IT (AI &
+              Robotics).
+            </h4>
             <p className="mb-3">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa
-              repellat dolore illo nemo doloribus consequatur provident vel
-              laudantium cumque impedit.
+              I am keen to apply my skills in LLMs, LangChain, and full-stack
+              development to push the boundaries of what's possible with
+              intelligent systems.
             </p>
             {/* stats */}
-            <div className="flex gap-x-6 lg:gap-x-10 mb-12">
+            {/* <div className="flex gap-x-6 lg:gap-x-10 mb-12">
               <div>
                 <div className="text-[40px] font-tertiary text-gradient mb-2">
                   {inView ? <CountUp start={0} end={13} duration={3} /> : null}
@@ -75,12 +78,31 @@ const About = () => {
                   Satisfied <br /> Clients
                 </div>
               </div>
+            </div> */}
+            <div className="flex gap-x-6 lg:gap-x-10 mb-12">
+              <div>
+                <div className="text-[25px] my-3">
+                  <p className="text-accent">Tech Stack</p>
+                </div>
+                <div className="h3 text-sm tracking-[2px]">
+                  Python | AI/ML | Full-Stack Development Machine Learning |
+                  Deep Learning | LLMs LangChain | LangGraph | MERN Stack | NLP
+                  | GenAI
+                </div>
+              </div>
             </div>
             <div className="flex gap-x-8 items-center">
-              <button className="btn btn-lg ">Contact Me</button>
-              <a href="#" className="text-gradient btn-link">
-                My Portfolio
-              </a>
+              {/* <button className="btn btn-lg ">Contact Me</button> */}
+              <button className="btn btn-lg ">
+                <a
+                  href="https://github.com/shreyashlodhi"
+                  target="_blank"
+                  rel="noreferrer"
+                  // className="text-gradient btn-link"
+                >
+                  My Github
+                </a>
+              </button>
             </div>
           </motion.div>
         </div>

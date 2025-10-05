@@ -1,6 +1,6 @@
 import React from "react";
 // images
-import Logo from "../assets/logo.jpg";
+// import Logo from "../assets/logo.jpg";
 
 const Header = () => {
   return (
@@ -10,7 +10,12 @@ const Header = () => {
           {/* logo */}
           <a href="#">{/* <img src={Logo} alt="" /> */}</a>
           {/* button */}
-          <button className="btn btn-sm">Work with me</button>
+          <a
+            href="https://mail.google.com/mail/?view=cm&fs=1&to=lodhishreyash23@gmail.com"
+            target="_blank"
+          >
+            <button className="btn btn-sm">Work with me</button>
+          </a>
         </div>
       </div>
     </header>
