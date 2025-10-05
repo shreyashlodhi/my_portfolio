@@ -1,18 +1,20 @@
 {
   "files": {
-    "main.css": "/my_portfolio/static/css/main.0184bc70.css",
-    "main.js": "/my_portfolio/static/js/main.a80ff886.js",
-    "static/media/img1.png": "/my_portfolio/static/media/img1.249fc5a5fa47f1a78771.png",
-    "static/media/img2.png": "/my_portfolio/static/media/img2.249fc5a5fa47f1a78771.png",
-    "static/media/img3.png": "/my_portfolio/static/media/img3.249fc5a5fa47f1a78771.png",
-    "static/media/logo.jpg": "/my_portfolio/static/media/logo.75d918630bd2d87bd770.jpg",
+    "main.css": "/my_portfolio/static/css/main.79c133e1.css",
+    "main.js": "/my_portfolio/static/js/main.3f0b7c86.js",
+    "static/media/profile_img.png": "/my_portfolio/static/media/profile_img.c2fb457e53556d13524c.png",
     "static/media/site-bg.jpg": "/my_portfolio/static/media/site-bg.db7923d16ac32bc3e8c9.jpg",
+    "static/media/about_img.jpg": "/my_portfolio/static/media/about_img.2f8f224393cce01bc2e1.jpg",
+    "static/media/AIMockInterviewer.png": "/my_portfolio/static/media/AIMockInterviewer.ae604090a7d918a13d54.png",
+    "static/media/AIResearcher.png": "/my_portfolio/static/media/AIResearcher.614f20d3d07ba92f8506.png",
+    "static/media/AIChatbot.png": "/my_portfolio/static/media/AIChatbot.c963e04a3d722679dfa0.png",
+    "static/media/ShreyashLodhiResume.pdf": "/my_portfolio/static/media/ShreyashLodhiResume.e54aa0f100ed51b3a597.pdf",
     "index.html": "/my_portfolio/index.html",
-    "main.0184bc70.css.map": "/my_portfolio/static/css/main.0184bc70.css.map",
-    "main.a80ff886.js.map": "/my_portfolio/static/js/main.a80ff886.js.map"
+    "main.79c133e1.css.map": "/my_portfolio/static/css/main.79c133e1.css.map",
+    "main.3f0b7c86.js.map": "/my_portfolio/static/js/main.3f0b7c86.js.map"
   },
   "entrypoints": [
-    "static/css/main.0184bc70.css",
-    "static/js/main.a80ff886.js"
+    "static/css/main.79c133e1.css",
+    "static/js/main.3f0b7c86.js"
   ]
 }
